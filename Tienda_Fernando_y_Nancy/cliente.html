@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cliente - Fernando y Nancy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Fernando y Nancy</h1>
+        <p>¡Bienvenido, cliente! Compra nuestros productos y consulta el inventario.</p>
+        <nav>
+            <ul>
+                <li><a href="#consultar">Consultar Inventario</a></li>
+                <li><a href="#comprar">Comprar Productos</a></li>
+                <li><a href="index.html">Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="consultar">
+            <h2>Consultar Inventario</h2>
+            <button id="btnConsultar">Consultar Inventario</button>
+            <div id="inventarioCliente"></div>
+        </section>
+
+        <section id="comprar">
+            <h2>Comprar Productos</h2>
+            <button id="btnMostrarProductos">Mostrar Productos</button>
+            <div id="productosCompra"></div>
+            <div id="mensajeCompra"></div>
+        </section>
+
+        <section id="factura">
+            <h2>Factura</h2>
+            <div id="detalleFactura"></div>
+            <button id="btnNuevaCompra">Nueva Compra</button>
+            <button id="btnFinalizarCompra">Finalizar Compra</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Fernando y Nancy</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

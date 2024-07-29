@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Producto - Fernando y Nancy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Fernando y Nancy</h1>
+        <p>Registrar nuevo producto en el inventario.</p>
+        <nav>
+            <ul>
+                <li><a href="empleado.html">Atrás</a></li>
+                <li><a href="consultar_inventario.html">Consultar Inventario</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form id="formRegistroProducto">
+            <label for="nombre">Nombre del Producto:</label>
+            <input type="text" id="nombre" required>
+            <label for="stockMax">Stock Máximo:</label>
+            <input type="number" id="stockMax" min="1" max="50" required>
+            <label for="stockMin">Stock Mínimo:</label>
+            <input type="number" id="stockMin" min="1" required>
+            <label for="precio">Precio:</label>
+            <input type="number" id="precio" min="0.01" step="0.01" required>
+            <button type="submit">Registrar Producto</button>
+        </form>
+        <div id="mensajeRegistro"></div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Fernando y Nancy</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

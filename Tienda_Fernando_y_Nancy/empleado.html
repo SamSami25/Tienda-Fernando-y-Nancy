@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empleado - Fernando y Nancy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Fernando y Nancy</h1>
+        <p>¡Bienvenido, empleado! Administra el inventario aquí.</p>
+        <nav>
+            <ul>
+                <li><a href="#registrar">Registrar Producto</a></li>
+                <li><a href="#consultar">Consultar Inventario</a></li>
+                <li><a href="cliente.html">Ver como Cliente</a></li>
+                <li><a href="index.html">Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="registrar">
+            <h2>Registrar Producto</h2>
+            <form id="formRegistrar">
+                <label for="nombre">Nombre del Producto:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="precio">Precio del Producto:</label>
+                <input type="number" id="precio" name="precio" min="0" required>
+                
+                <label for="stockMax">Stock Máximo:</label>
+                <input type="number" id="stockMax" name="stockMax" min="0" max="50" required>
+                
+                <label for="stockMin">Stock Mínimo:</label>
+                <input type="number" id="stockMin" name="stockMin" min="0" required>
+                
+                <button type="submit">Registrar Producto</button>
+            </form>
+            <div id="mensajeRegistro"></div>
+        </section>
+
+        <section id="consultar">
+            <h2>Consultar Inventario</h2>
+            <button id="btnConsultar">Consultar Inventario</button>
+            <div id="inventario"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Fernando y Nancy</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
